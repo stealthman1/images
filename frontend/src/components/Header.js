@@ -6,8 +6,7 @@ const navBarStyle = {
   backgroundColor: '#eeeeee',
 };
 
-const Header = (props) => {
-  const { title } = props;
+const Header = ({ title }) => {
   return (
     <Navbar style={navBarStyle} variant="light">
       <Container>
