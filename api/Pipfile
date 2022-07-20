@@ -4,7 +4,8 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-flask = "==1.1.2"
+flask = "*"
+python-dotenv = "*"
 
 [dev-packages]
 
