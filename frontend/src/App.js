@@ -15,18 +15,6 @@ const App = () => {
   const [word, setWord] = useState('');
   const [images, setImages] = useState([]);
 
-  // useEffect(() => {
-  //   async function getSavedImages() {
-  //     try {
-  //       const response = await axios.get(`${API_URL}/images`);
-  //       setImages(response.data || []);
-  //     } catch (error) {
-  //       console.log(error);
-  //     }
-  //   }
-  //   getSavedImages();
-  // }, []);
-
   const getSavedImages = async () => {
     try {
       const res = await axios.get(`${API_URL}/images`);
